@@ -1,0 +1,121 @@
+body {
+    width: 80%;
+    margin: auto;
+}
+
+h3 {
+    border-bottom-style: solid;
+    border-width: 1.5px;
+}
+
+h4 {
+    margin-top: 10px;
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+
+.forms-area{
+    margin-top: 24px;
+}
+
+.gender-area{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    -webkit-animation: spin1 8s linear infinite;
+    animation: spin1 8s linear infinite;
+
+    display: flex;
+    justify-content: center;
+}
+.gender-area:hover{
+    background: rgba(225, 249, 231, 0.3);
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.radio {
+    position: absolute;
+    padding-top: 5%;
+    transform-origin: top;
+    width: 45%;
+    height: 45%;
+    border-radius: 50%;
+    margin: 50% auto;
+}
+
+.key{
+    text-orientation: upright;
+    transform: rotate(-90deg);
+}
+
+label {
+    /* padding-left: 5px; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    writing-mode: vertical-lr;
+}
+
+.label {
+    border-radius: 50%;
+}
+
+.label:hover {
+    background: rgba(135, 206, 250, 0.4);
+}
+
+
+#g1 {
+    transform: rotate(0deg)
+}
+#g2 {
+    transform: rotate(120deg);
+}
+#g9 {
+    transform: rotate(240deg);
+}
+
+
+#gender1 {
+    -webkit-animation: spin1 8s linear infinite;
+    animation: spin1 8s linear infinite;
+}
+
+#gender2 {
+    -webkit-animation: spin2 8s linear infinite;
+    animation: spin2 8s linear infinite;
+}
+
+#gender9 {
+    -webkit-animation: spin9 8s linear infinite;
+    animation: spin9 8s linear infinite;
+}
+
+@-webkit-keyframes spin1 {
+	0% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin1 {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
+@-webkit-keyframes spin2 {
+	0% {-webkit-transform: rotate(120deg);}
+	100% {-webkit-transform: rotate(480deg);}
+}
+@keyframes spin2 {
+	0% {transform: rotate(120deg);}
+	100% {transform: rotate(480deg);}
+}
+@-webkit-keyframes spin9 {
+	0% {-webkit-transform: rotate(240deg);}
+	100% {-webkit-transform: rotate(600deg);}
+}
+@keyframes spin9 {
+	0% {transform: rotate(240deg);}
+	100% {transform: rotate(600deg);}
+}
