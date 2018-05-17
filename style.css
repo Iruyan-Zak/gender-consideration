@@ -1,6 +1,7 @@
 body {
     width: 80%;
     margin: auto;
+    font-family: sans-serif;
 }
 
 h3 {
@@ -46,8 +47,7 @@ h4 {
 }
 
 .key{
-    text-orientation: upright;
-    transform: rotate(-90deg);
+    padding-top: 5px;
 }
 
 label {
@@ -67,15 +67,20 @@ label {
     background: rgba(135, 206, 250, 0.4);
 }
 
+.label-block {
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
 
 #g1 {
-    transform: rotate(0deg)
+    transform: rotate(120deg)
 }
 #g2 {
-    transform: rotate(120deg);
+    transform: rotate(240deg);
 }
 #g9 {
-    transform: rotate(240deg);
+    transform: rotate(0deg);
 }
 
 
@@ -83,39 +88,37 @@ label {
     -webkit-animation: spin1 8s linear infinite;
     animation: spin1 8s linear infinite;
 }
-
 #gender2 {
     -webkit-animation: spin2 8s linear infinite;
     animation: spin2 8s linear infinite;
 }
-
 #gender9 {
     -webkit-animation: spin9 8s linear infinite;
     animation: spin9 8s linear infinite;
 }
 
 @-webkit-keyframes spin1 {
-	0% {-webkit-transform: rotate(0deg);}
-	100% {-webkit-transform: rotate(360deg);}
-}
-
-@keyframes spin1 {
-	0% {transform: rotate(0deg);}
-	100% {transform: rotate(360deg);}
-}
-@-webkit-keyframes spin2 {
 	0% {-webkit-transform: rotate(120deg);}
 	100% {-webkit-transform: rotate(480deg);}
 }
-@keyframes spin2 {
+@keyframes spin1 {
 	0% {transform: rotate(120deg);}
 	100% {transform: rotate(480deg);}
 }
-@-webkit-keyframes spin9 {
+@-webkit-keyframes spin2 {
 	0% {-webkit-transform: rotate(240deg);}
 	100% {-webkit-transform: rotate(600deg);}
 }
-@keyframes spin9 {
+@keyframes spin2 {
 	0% {transform: rotate(240deg);}
 	100% {transform: rotate(600deg);}
 }
+@-webkit-keyframes spin9 {
+	0% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(360deg);}
+}
+@keyframes spin9 {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
+
